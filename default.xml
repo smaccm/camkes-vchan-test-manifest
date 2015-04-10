@@ -13,6 +13,9 @@
 <manifest>
     <!-- fetch is the path relative to the manifest repo path to get other repositories from -->
     <remote name="seL4"
+        fetch="../seL4"
+    />
+    <remote name="smaccm"
         fetch="."
     />
 
@@ -58,7 +61,7 @@
     <project name="libsel4bench.git" path="libs/libsel4bench"/>
     <project name="libethdrivers.git" path="libs/libethdrivers"/>
 
-    <project name="camkes-vm.git" path="projects/vm">
+    <project name="camkes-vchan-test.git" path="projects/vchan-test" remote="smaccm">
         <!-- symlinks to make the project structure fit the build system -->
         <linkfile src="Kconfig" dest="Kconfig"/>
         <linkfile src="configs" dest="configs"/>
@@ -69,6 +72,7 @@
         <linkfile src="liblwip" dest="libs/liblwip"/>
         <linkfile src="tools/elf" dest="tools/elf"/>
         <linkfile src="apps/vm" dest="apps/vm"/>
+        <linkfile src="apps/vchan-test" dest="apps/vchan-test"/>
         <linkfile src="apps/cxx" dest="apps/cxx"/>
         <linkfile src="README.md" dest="README.md"/>
     </project>
