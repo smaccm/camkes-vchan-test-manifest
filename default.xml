@@ -73,6 +73,7 @@
         <linkfile src="tools/elf" dest="tools/elf"/>
         <linkfile src="apps/vm" dest="apps/vm"/>
         <linkfile src="apps/vchan-test" dest="apps/vchan-test"/>
+        <linkfile src="apps/vchan-test-aadl" dest="apps/vchan-test-aadl"/>
         <linkfile src="apps/cxx" dest="apps/cxx"/>
         <linkfile src="README.md" dest="README.md"/>
     </project>
