@@ -1,3 +1,20 @@
+camkes-vchan-test-manifest
+==========================
+
+Testing ground for AADL to vchan communication.
+
+The example without AADL-generated code
+
+    make vchan_defconfig; make
+
+The example with AADL-generated code
+
+    make vchan_aadl_defconfig; make
+
+Both should run on x86 with qemu
+
+    qemu-system-i386 -nographic -m 512   -kernel images/kernel-ia32-pc99   -initrd images/capdl-loader-experimental-image-ia32-pc99
+
 camkes-vm-manifest
 ==================
 The CAmkES VMM is a Virtual Machine Monitor that utilizes the CAmkES component platform.
